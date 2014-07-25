@@ -1,5 +1,4 @@
 <?php
-
 class output{
     private $done = false;
     private $smarty = false;
