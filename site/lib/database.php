@@ -9,6 +9,7 @@ class database{
             $dbconf['username'],
             $dbconf['password']
         );
+        $this->db->select_db($dbconf['database']);
     }
 
     public function __destruct(){
