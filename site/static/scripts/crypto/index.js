@@ -3,7 +3,9 @@
  */
 define([
     'asymmetric',
-    'symmetric',
+    'salsa20',
 ], function(asym, sym){
-    
+    return {
+        symmetricCipher: sym,
+    };
 });
