@@ -5,7 +5,11 @@ define([
     'ec/index',
     'salsa20',
 ], function(asym, sym){
-    return {
-        symmetricCipher: sym,
+    return function crypto(){
+        var self = this;
+
+
+
+        return this;
     };
 });
