@@ -223,4 +223,4 @@ define([], function(){
         salsa20.key(key);
         return salsa20;
     };
-};
+});

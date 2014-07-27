@@ -4,11 +4,12 @@
 define([
     'ec/index',
     'salsa20',
-], function(asym, sym){
+    'random',
+], function(asym, sym, rand){
     return function crypto(){
         var self = this;
 
-
+        this.random = new rand();
 
         return this;
     };

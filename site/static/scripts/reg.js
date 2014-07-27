@@ -1,7 +1,8 @@
 require([
     'jquery',
     'bootstrap',
-], function($, _bootstrap){
+    'crypto/index',
+], function($, _bootstrap, crypto){
     $(function(){
         $('body').mousemove(function(e){
         });

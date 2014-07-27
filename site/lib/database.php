@@ -13,13 +13,20 @@ class database{
     }
 
     public function __destruct(){
+        $this->db->commit();
         $this->db->close();
     }
 
     public function query($sql){
+        $result = $this->db->query($sql);
+        $error = $this->db->error;
+        if($error) return null;
+        return $result->fetch_array(MYSQLI_ASSOC);
     }
 
     public function execute($sql){
+        $this->db->query($sql);
+        return $this->db->error;
     }
 
 }
