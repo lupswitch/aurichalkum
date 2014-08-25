@@ -14,6 +14,8 @@
             paths: {
                 jquery: 'util/jquery',
                 bootstrap: 'util/bootstrap',
+                crypto: 'util/crypto',
+                modernizr: 'util/modernizr',
             },
             shim: {
                 bootstrap: {
