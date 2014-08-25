@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/bootstrap-theme.css">
 
-    <script src="static/scripts/util/require.js" data-main="{$script_entry}"></script>
+    <script src="static/scripts/util/require.js" data-main="aurichalkum"></script>
     <script>
         require.config({
             baseUrl: '/static/scripts',
