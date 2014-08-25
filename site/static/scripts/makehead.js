@@ -11,6 +11,7 @@ var tool = {
     },
     'set': function(name, x){
         funcTree[name] = x;
+        return tool;
     },
     'exp': function(path, x){
         var paths = path.split('.');
@@ -27,3 +28,10 @@ var tool = {
         };
     },
 };
+
+tool
+    .set('jquery', $)
+    .set('bootstrap', bootstrap)
+    .set('crypto', crypto)
+    .set('modernizr', modernizr)
+;
