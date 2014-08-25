@@ -8,6 +8,7 @@
  */
 
 (function(t, main){
+    
     main = function(){
     };
 })(tool, main);
